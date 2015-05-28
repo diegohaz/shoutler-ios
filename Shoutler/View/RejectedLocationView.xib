@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RejectedLocationController" customModule="Shoutler" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zeW-Bj-Bu7">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFr-DR-9Bn">
+                    <rect key="frame" x="90" y="230.5" width="420" height="140"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vN-Ae-tCT" customClass="LocalizedLabel" customModule="Shoutler" customModuleProvider="target">
+                            <rect key="frame" x="8" y="48" width="404" height="20"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Reject location">
+                                    <attributes>
+                                        <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                        <real key="NSKern" value="0.0"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="leftToRight" minimumLineHeight="16" defaultTabInterval="36">
+                                            <tabStops/>
+                                        </paragraphStyle>
+                                        <color key="NSStrokeColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uxq-Ic-rgH" customClass="LocalizedButton" customModule="Shoutler" customModuleProvider="target">
+                            <rect key="frame" x="8" y="84" width="404" height="48"/>
+                            <color key="backgroundColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="cjl-OW-eGL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                            <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                            <state key="normal" title="Open Settings">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="openSettings:" destination="-1" eventType="touchUpInside" id="WM1-8i-EUj"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Black" translatesAutoresizingMaskIntoConstraints="NO" id="qew-Re-0FX">
+                            <rect key="frame" x="198" y="8" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="6rd-dx-hui"/>
+                                <constraint firstAttribute="width" constant="24" id="Jth-mi-MxY"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="420" id="0CF-qk-qaV"/>
+                        <constraint firstItem="7vN-Ae-tCT" firstAttribute="top" secondItem="qew-Re-0FX" secondAttribute="bottom" constant="16" id="1jx-Zr-sQt"/>
+                        <constraint firstAttribute="centerX" secondItem="qew-Re-0FX" secondAttribute="centerX" id="7jk-EM-bL8"/>
+                        <constraint firstItem="7vN-Ae-tCT" firstAttribute="leading" secondItem="HFr-DR-9Bn" secondAttribute="leading" constant="8" id="Cac-Ee-dBV"/>
+                        <constraint firstItem="Uxq-Ic-rgH" firstAttribute="leading" secondItem="HFr-DR-9Bn" secondAttribute="leading" constant="8" id="G6q-Ds-B2z"/>
+                        <constraint firstAttribute="trailing" secondItem="7vN-Ae-tCT" secondAttribute="trailing" constant="8" id="NoG-9j-mf2"/>
+                        <constraint firstAttribute="trailing" secondItem="Uxq-Ic-rgH" secondAttribute="trailing" constant="8" id="jfk-Ly-g5j"/>
+                        <constraint firstItem="qew-Re-0FX" firstAttribute="top" secondItem="HFr-DR-9Bn" secondAttribute="top" constant="8" id="q0U-KM-gHF"/>
+                        <constraint firstItem="Uxq-Ic-rgH" firstAttribute="top" secondItem="7vN-Ae-tCT" secondAttribute="bottom" constant="16" id="rAl-ih-vqg"/>
+                        <constraint firstAttribute="bottom" secondItem="Uxq-Ic-rgH" secondAttribute="bottom" constant="8" id="tIG-Rj-hOY"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="HFr-DR-9Bn" firstAttribute="leading" secondItem="zeW-Bj-Bu7" secondAttribute="leading" priority="750" constant="8" id="3Wn-UR-iuy"/>
+                <constraint firstAttribute="centerX" secondItem="HFr-DR-9Bn" secondAttribute="centerX" id="Syf-ss-pUe"/>
+                <constraint firstAttribute="centerY" secondItem="HFr-DR-9Bn" secondAttribute="centerY" id="i5X-09-6rF"/>
+                <constraint firstAttribute="trailing" secondItem="HFr-DR-9Bn" secondAttribute="trailing" priority="750" constant="8" id="xVf-PM-Ryu"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="Black" width="100" height="100"/>
+    </resources>
+</document>

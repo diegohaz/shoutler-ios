@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Shoutler
+
+  Created by Diego Haz on 5/27/15.
+  Copyright (c) 2015 Diego Haz. All rights reserved.
+*/
+"Request location" = "To start shouting at your place, it is necessary to authorize location usage.";
+"Location button" = "Authorize location access";
+"Reject location" = "Location access disabled. To start shouting at your place, please open this app's settings and allow it.";
+"Open Settings" = "Open Settings";
+"Where are you?" = "Where are you?";
+"Feeling in %@" = "How are you feeling in %@?";
+"Not in %@" = "Aren't you in %@?";
+"Shout in %@" = "Shout something in %@";

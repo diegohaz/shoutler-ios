@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlacesController" customModule="Shoutler" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="Nj4-KJ-a5U" id="Q1K-wB-PyF"/>
+                <outlet property="view" destination="WMZ-CP-mE1" id="udu-jZ-Lof"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="WMZ-CP-mE1">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUg-Rs-C5h">
+                    <rect key="frame" x="90" y="60" width="420" height="480"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77R-2E-f47">
+                            <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="nuS-cG-oN2"/>
+                                <constraint firstAttribute="width" constant="48" id="qOg-in-dcD"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <inset key="contentEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
+                            <state key="normal" image="Cancel">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="close:" destination="-1" eventType="touchUpInside" id="Yoz-AM-rQE"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where are you?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dQ-hf-3Rv" customClass="LocalizedLabel" customModule="Shoutler" customModuleProvider="target">
+                            <rect key="frame" x="150" y="13" width="120" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" style="plain" rowHeight="48" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Nj4-KJ-a5U">
+                            <rect key="frame" x="0.0" y="48" width="420" height="384"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="750" constant="384" id="gqZ-1d-53P"/>
+                            </constraints>
+                            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="OQf-dt-WK9"/>
+                                <outlet property="delegate" destination="-1" id="aB4-IM-IPf"/>
+                            </connections>
+                        </tableView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PoweredByGoogle" translatesAutoresizingMaskIntoConstraints="NO" id="Tns-42-7HG">
+                            <rect key="frame" x="16" y="448" width="104" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="104" id="Ahm-ic-b9j"/>
+                                <constraint firstAttribute="height" constant="16" id="Hu5-P1-ySy"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Nj4-KJ-a5U" firstAttribute="leading" secondItem="wUg-Rs-C5h" secondAttribute="leading" id="FOA-sL-F0E"/>
+                        <constraint firstItem="Tns-42-7HG" firstAttribute="leading" secondItem="wUg-Rs-C5h" secondAttribute="leading" constant="16" id="FZM-Ub-Q03"/>
+                        <constraint firstItem="77R-2E-f47" firstAttribute="top" secondItem="wUg-Rs-C5h" secondAttribute="top" id="GkE-bx-e17"/>
+                        <constraint firstAttribute="trailing" secondItem="Nj4-KJ-a5U" secondAttribute="trailing" id="NRL-y5-OPk"/>
+                        <constraint firstAttribute="centerX" secondItem="8dQ-hf-3Rv" secondAttribute="centerX" id="dgo-eQ-NA2"/>
+                        <constraint firstItem="Tns-42-7HG" firstAttribute="top" secondItem="Nj4-KJ-a5U" secondAttribute="bottom" constant="16" id="eyz-np-BFF"/>
+                        <constraint firstAttribute="bottom" secondItem="Tns-42-7HG" secondAttribute="bottom" constant="16" id="fvN-yt-08X"/>
+                        <constraint firstItem="Nj4-KJ-a5U" firstAttribute="top" secondItem="77R-2E-f47" secondAttribute="bottom" id="hq5-eB-41S"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="420" id="rlC-aV-e5G"/>
+                        <constraint firstItem="8dQ-hf-3Rv" firstAttribute="centerY" secondItem="77R-2E-f47" secondAttribute="centerY" constant="-0.5" id="xT0-aU-bfY"/>
+                        <constraint firstItem="77R-2E-f47" firstAttribute="leading" secondItem="wUg-Rs-C5h" secondAttribute="leading" id="zAV-zz-mBu"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wUg-Rs-C5h" secondAttribute="bottom" constant="8" id="3ty-P7-3g1"/>
+                <constraint firstAttribute="trailing" secondItem="wUg-Rs-C5h" secondAttribute="trailing" priority="750" constant="8" id="6AZ-9Z-dk9"/>
+                <constraint firstItem="wUg-Rs-C5h" firstAttribute="leading" secondItem="WMZ-CP-mE1" secondAttribute="leading" priority="750" constant="8" id="Y0v-OU-4PM"/>
+                <constraint firstItem="wUg-Rs-C5h" firstAttribute="top" relation="greaterThanOrEqual" secondItem="WMZ-CP-mE1" secondAttribute="top" constant="24" id="ol1-hB-jEk"/>
+                <constraint firstAttribute="centerX" secondItem="wUg-Rs-C5h" secondAttribute="centerX" id="tKG-0d-edS"/>
+                <constraint firstAttribute="centerY" secondItem="wUg-Rs-C5h" secondAttribute="centerY" priority="750" id="yFM-UU-qXp"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="Cancel" width="24" height="24"/>
+        <image name="PoweredByGoogle" width="104" height="16"/>
+    </resources>
+</document>

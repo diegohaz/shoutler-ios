@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  Shoutler
+
+  Created by Diego Haz on 5/27/15.
+  Copyright (c) 2015 Diego Haz. All rights reserved.
+*/
+"Request location" = "Para começar a usar o aplicativo no seu local, é necessário autorizar o acesso à sua localização.";
+"Location button" = "Autorizar acesso";
+"Reject location" = "O acesso a localização não foi permitido. Para usar o aplicativo no seu local, por favor abra as configurações e ative.";
+"Open Settings" = "Abrir configurações";
+"Where are you?" = "Em que lugar você está?";
+"Feeling in %@" = "Como você está se sentindo em %@?";
+"Not in %@" = "Não está em %@?";
+"Shout in %@" = "Grite algo em %@";
+
+"%d days ago" = "%d dias atrás";
+"%d hours ago" = "%d horas atrás";
+"%d minutes ago" = "%d minutos atrás";
+"%d months ago" = "%d meses atrás";
+"%d seconds ago" = "%d segundos atrás";
+"%d weeks ago" = "%d semanas atrás";
+"%d years ago" = "%d anos atrás";
+"A minute ago" = "Um minuto atrás";
+"An hour ago" = "Uma hora atrás";
+"Just now" = "Agora mesmo";
+"Last month" = "Mês passado";
+"Last week" = "Semana passada";
+"Last year" = "Ano passado";
+"Yesterday" = "Ontem";
+"1 year ago" = "1 ano passado";
+"1 month ago" = "1 mês atrás";
+"1 week ago" = "1 semana atrás";
+"1 day ago" = "1 dia atrás";
+"This morning" = "Esta manhã";
+"This afternoon" = "Esta tarde";
+"Today" = "Hoje";
+"This week" = "Esta semana";
+"This month" = "Este mês";
+"This year" = "Este ano";
